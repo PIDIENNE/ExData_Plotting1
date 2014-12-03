@@ -37,8 +37,3 @@ Sys.setlocale("LC_TIME", language)
 png(filename = "plot2.png")
 plot(PCDF_sub$datetime, PCDF_sub$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type = "l")
 dev.off() 
-
-
-# Try this instead
-#library(sqldf)
-#HP2<-read.csv.sql("household_power_consumption.txt", header=TRUE, sep=";", sql="select*from file where Date='2007-02-01'")
